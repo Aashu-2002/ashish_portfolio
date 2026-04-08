@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashish Ranjan | Digital Specialist Engineer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-text">&lt;Ashish Ranjan /&gt;</div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo">&lt;Ashish/&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home" class="mob-link">Home</a></li>
+            <li><a href="#about" class="mob-link">About</a></li>
+            <li><a href="#skills" class="mob-link">Skills</a></li>
+            <li><a href="#experience" class="mob-link">Experience</a></li>
+            <li><a href="#certifications" class="mob-link">Certifications</a></li>
+            <li><a href="#projects" class="mob-link">Projects</a></li>
+            <li><a href="#contact" class="mob-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hi there, I'm</p>
+            <h1 class="hero-name">Ashish Ranjan</h1>
+            <h2 class="hero-role">
+                <span class="typed-text"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-desc">
+                A passionate <span class="highlight">Digital Specialist Engineer</span> at
+                <span class="infosys">Infosys</span>, crafting seamless full-stack
+                experiences with React &amp; Node.js.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+                <a href="resume/Ashish_Ranjan_Resume.pdf" class="btn btn-outline" download><i
+                        class="fas fa-download"></i> Resume</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/Aashu-2002" aria-label="GitHub" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/aashu2002" aria-label="LinkedIn" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://leetcode.com/aashu_0511" aria-label="LeetCode" target="_blank" class="social-leetcode"><i
+                        class="fas fa-code"></i></a>
+                <a href="https://www.codechef.com/users/ashishranjan05" aria-label="CodeChef" target="_blank"
+                    class="social-codechef"><i class="fas fa-utensils"></i></a>
+                <a href="mailto:Ashishranjansingh6@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="avatar-ring">
+                <div class="avatar-inner">
+                    <span class="avatar-initials">Ashish</span>
+                </div>
+            </div>
+            <div class="floating-badge badge-1"><i class="fab fa-react"></i> React</div>
+            <div class="floating-badge badge-2"><i class="fab fa-node-js"></i> Node.js</div>
+            <div class="floating-badge badge-3"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="floating-badge badge-4"><i class="fas fa-database"></i> MongoDB</div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <!-- <span class="section-tag"> </span> -->
+                <h2 class="section-title">Who Am I?</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-card-visual">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="code-filename">about.js</span>
+                            </div>
+                            <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">ashish</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Ashish Ranjan"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Digital Specialist Engineer"</span>,
+  <span class="c-prop">company</span>: <span class="c-str">"Infosys"</span>,
+  <span class="c-prop">experience</span>: <span class="c-str">"6 months"</span>,
+  <span class="c-prop">stack</span>: [
+    <span class="c-str">"React"</span>, <span class="c-str">"Node.js"</span>,
+    <span class="c-str">"JavaScript"</span>, <span class="c-str">"MongoDB"</span>
+  ],
+  <span class="c-prop">passion</span>: <span class="c-str">"Building great products"</span>,
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm <strong>Ashish Ranjan</strong>, a Digital Specialist Engineer at
+                        <span class="infosys">Infosys</span>. With 6 months of professional
+                        experience, I work on building scalable, user-centric web applications
+                        using modern JavaScript technologies.
+                    </p>
+                    <p>
+                        My focus is on full-stack development — designing clean React frontends
+                        and robust Node.js backends, with a strong attention to performance,
+                        code quality, and developer experience.
+                    </p>
+                    <p>
+                        I thrive in agile environments, collaborate closely with cross-functional
+                        teams, and am always exploring new tools and best practices to sharpen
+                        my craft.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-num">6</span>
+                            <span class="stat-label">Months at Infosys</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">2</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">5+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                
+                <h2 class="section-title">Skills &amp; Technologies</h2>
+            </div>
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fab fa-react skill-icon react"></i> React.js</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fab fa-js skill-icon js"></i> JavaScript (ES6+)</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fab fa-html5 skill-icon html"></i> HTML5 / CSS3</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fas fa-wind skill-icon tw"></i> Tailwind CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fab fa-node-js skill-icon node"></i> Node.js</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fas fa-cogs skill-icon exp"></i> Express.js</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fas fa-database skill-icon mongo"></i> MongoDB</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fas fa-plug skill-icon api"></i> REST APIs</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> CS Fundamentals</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fas fa-sitemap skill-icon dsa"></i> DSA</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fas fa-cubes skill-icon oops"></i> OOPs</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fas fa-database skill-icon dbms"></i> DBMS</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fas fa-table skill-icon sql"></i> SQL</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools &amp; DevOps</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fab fa-git-alt skill-icon git"></i> Git &amp; GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fas fa-code skill-icon vscode"></i> VS Code</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fas fa-paper-plane skill-icon postman"></i> Postman</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><i class="fas fa-tasks skill-icon jira"></i> Jira / Agile</div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="72"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tech Badges -->
+            <div class="tech-badges">
+                <span class="badge"><i class="fab fa-react"></i> React</span>
+                <span class="badge"><i class="fab fa-node-js"></i> Node.js</span>
+                <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="badge"><i class="fas fa-database"></i> MongoDB</span>
+                <span class="badge"><i class="fas fa-cogs"></i> Express</span>
+                <span class="badge"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="badge"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="badge"><i class="fas fa-code"></i> VS Code</span>
+                <span class="badge"><i class="fas fa-paper-plane"></i> Postman</span>
+                <span class="badge"><i class="fas fa-wind"></i> Tailwind</span>
+                <span class="badge"><i class="fas fa-sitemap"></i> DSA</span>
+                <span class="badge"><i class="fas fa-cubes"></i> OOPs</span>
+                <span class="badge"><i class="fas fa-database"></i> DBMS</span>
+                <span class="badge"><i class="fas fa-table"></i> SQL</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item active reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Digital Specialist Engineer</h3>
+                                <span class="company-name">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg"
+                                        alt="Infosys" class="company-logo" />
+                                    Infosys Ltd.
+                                </span>
+                            </div>
+                            <span class="timeline-date">Oct 2025 – Present</span>
+                        </div>
+                        <div class="timeline-badge">Full-Time · 6 months</div>
+                        <ul class="timeline-points">
+                            <li>Developed and maintained full-stack web applications using <strong>React.js</strong> and
+                                <strong>Node.js</strong> for enterprise clients.
+                            </li>
+                            <li>Collaborated in <strong>Agile sprints</strong>, contributing to design reviews, code
+                                reviews, and daily stand-ups.</li>
+                            <li>Built RESTful APIs with <strong>Express.js</strong>, integrated with MongoDB databases
+                                for data persistence.</li>
+                            <li>Optimized React component performance, reducing re-renders and improving page load time
+                                by <strong>30%</strong>.</li>
+                            <li>Participated in <strong>client demos</strong> and delivered feature modules on schedule
+                                across 3 project tracks.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span>
+                            <span>Express</span><span>Agile</span><span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Frontend Developer Intern</h3>
+                                <span class="company-name">
+                                    <i class="fas fa-globe" style="font-size:14px;"></i>
+                                    Kitabwallah.com
+                                </span>
+                            </div>
+                            <span class="timeline-date">May 2025 – Jul 2025</span>
+                        </div>
+                        <div class="timeline-badge">Internship · 2 months</div>
+                        <ul class="timeline-points">
+                            <li>Developed and enhanced UI components for the company's web platform using
+                                <strong>React.js</strong>.
+                            </li>
+                            <li>Collaborated with the design team to implement responsive, pixel-perfect layouts for
+                                product and listing pages.</li>
+                            <li>Integrated <strong>REST APIs</strong> to fetch and render dynamic book catalog data on
+                                frontend pages.</li>
+                            <li>Improved component reusability, reducing code duplication and speeding up feature
+                                delivery.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>React</span><span>JavaScript</span><span>HTML5</span>
+                            <span>CSS3</span><span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            <div class="cert-grid">
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon-wrap">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-issuer"><i class="fas fa-graduation-cap"></i> Infosys Lex</span>
+                        <h3>MERN Stack Development</h3>
+                        <p>End-to-end training on MongoDB, Express.js, React.js &amp; Node.js. Built full-stack apps
+                            with REST APIs, JWT authentication, and MongoDB data modeling.</p>
+                        <div class="cert-tags">
+                            <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2025</span>
+                            <a href="certificates/mern-stack.pdf" class="cert-verify" target="_blank"><i
+                                    class="fas fa-file-pdf"></i>
+                                View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon-wrap gen-ai">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-issuer"><i class="fas fa-graduation-cap"></i> Infosys Lex</span>
+                        <h3>Generative AI</h3>
+                        <p>Foundational and applied knowledge of Generative AI, Large Language Models (LLMs), and prompt
+                            engineering for enterprise applications.</p>
+                        <div class="cert-tags">
+                            <span>Gen AI</span><span>LLMs</span><span>Prompt Engineering</span><span>AI</span>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2025</span>
+                            <a href="certificates/generative-ai.pdf" class="cert-verify" target="_blank"><i
+                                    class="fas fa-file-pdf"></i>
+                                View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card reveal">
+                    <div class="project-image img3">
+                        <div class="project-icon"><i class="fas fa-comments"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>React</span><span>Socket.io</span><span>Node.js</span>
+                        </div>
+                        <h3>Real-Time Chat App</h3>
+                        <p>A real-time messaging application supporting multiple chat rooms, online presence indicators,
+                            and message history — powered by Socket.io.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Aashu-2002/Chat-App" class="project-btn outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image img4">
+                        <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>React</span><span>REST API</span><span>JavaScript</span>
+                        </div>
+                        <h3>Weather Dashboard</h3>
+                        <p>A weather forecasting app integrating OpenWeatherMap API, showing current conditions, 7-day
+                            forecasts, and interactive charts.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Aashu-2002/Weather-API" class="project-btn outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-icon"><i class="fab fa-github"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>GitHub API</span><span>REST API</span>
+                        </div>
+                        <h3>GitHub ID Detector</h3>
+                        <p>A web app that fetches and displays detailed GitHub profile information — repositories,
+                            followers, following, and activity — using the GitHub REST API.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Aashu-2002/GitHub-ID-Detector" class="project-btn outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image img2">
+                        <div class="project-icon"><i class="fas fa-key"></i></div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                        </div>
+                        <h3>Random Password Generator</h3>
+                        <p>A secure password generator that creates strong, customizable passwords with options for
+                            length, uppercase, lowercase, numbers, and special characters.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Aashu-2002/Random-Password-Generator" class="project-btn outline"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        I'm open to discussing new opportunities, freelance projects, or just
+                        a friendly chat about tech. Feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:Ashishranjansingh6@gmail.com">Ashishranjansingh6@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="contact-label">Mobile</span>
+                                <a href="tel:+917979862971">+91 79798 62971</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span>India</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://linkedin.com/in/aashu2002/" target="_blank">linkedin.com/in/aashu2002</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <span class="contact-label">GitHub</span>
+                                <a href="https://github.com/Aashu-2002" target="_blank">github.com/Aashu-2002</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon leetcode-icon"><i class="fas fa-code"></i></div>
+                            <div>
+                                <span class="contact-label">LeetCode</span>
+                                <a href="https://leetcode.com/aashu_0511" target="_blank">leetcode.com/aashu_0511</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon codechef-icon"><i class="fas fa-utensils"></i></div>
+                            <div>
+                                <span class="contact-label">CodeChef</span>
+                                <a href="https://www.codechef.com/users/ashishranjan05"
+                                    target="_blank">codechef.com/users/ashishranjan05</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <!-- ✏️ Replace YOUR_FORM_ID below with your Formspree form ID -->
+                    <input type="hidden" name="_subject" value="New message from Portfolio – Ashish Ranjan" />
+                    <input type="hidden" name="_replyto" id="_replyto" />
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me more..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div id="formMsg" class="form-success" style="display:none;">
+                        ✅ Message sent! I'll get back to you soon.
+                    </div>
+                    <div id="formErr" class="form-error" style="display:none;">
+                        ❌ Something went wrong. Please try again or email directly.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>Designed &amp; Built by <span class="highlight">Ashish Ranjan</span> • Digital Specialist Engineer @
+                <span class="infosys">Infosys</span>
+            </p>
+            <p class="footer-sub">© 2026 Ashish Ranjan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
