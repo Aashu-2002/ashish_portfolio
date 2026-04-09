@@ -8,6 +8,36 @@ window.addEventListener('load', () => {
 });
 
 /* ============================================
+   THEME TOGGLE
+============================================ */
+(function initTheme() {
+    const toggle = document.getElementById('themeToggle');
+    const icon = toggle.querySelector('i');
+    const saved = localStorage.getItem('theme');
+
+    function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        if (theme === 'light') {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
+    }
+
+    if (saved) {
+        setTheme(saved);
+    }
+
+    toggle.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        setTheme(current === 'light' ? 'dark' : 'light');
+    });
+})();
+
+/* ============================================
    PARTICLE CANVAS
 ============================================ */
 (function initParticles() {
@@ -138,13 +168,13 @@ document.querySelectorAll('.mob-link').forEach(link => {
 })();
 
 /* ============================================
-   SCROLL REVEAL
+   SCROLL REVEAL (simple)
 ============================================ */
-const revealEls = document.querySelectorAll('.reveal');
+const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .section-header, .about-stats, .footer, .contact-info');
 const revealObs = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
+    entries.forEach((e) => {
         if (e.isIntersecting) {
-            setTimeout(() => e.target.classList.add('in-view'), i * 100);
+            e.target.classList.add('in-view');
             revealObs.unobserve(e.target);
         }
     });
@@ -212,4 +242,32 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
             target.scrollIntoView({ behavior: 'smooth' });
         }
     });
+});
+
+/* ============================================
+   CLICK BUBBLE EFFECT
+============================================ */
+document.addEventListener('click', function (e) {
+    const tag = e.target.tagName.toLowerCase();
+    if (e.target.closest('a, button, input, textarea, select, label, .hamburger, .nav-links')) return;
+    if (tag === 'a' || tag === 'button') return;
+
+    const colors = [
+        'radial-gradient(circle, rgba(108,99,255,0.35), rgba(108,99,255,0) 70%)',
+        'radial-gradient(circle, rgba(0,216,255,0.3), rgba(0,216,255,0) 70%)',
+        'radial-gradient(circle, rgba(255,101,132,0.3), rgba(255,101,132,0) 70%)',
+        'radial-gradient(circle, rgba(67,215,135,0.25), rgba(67,215,135,0) 70%)'
+    ];
+
+    const bubble = document.createElement('div');
+    bubble.classList.add('click-bubble');
+    const size = Math.random() * 80 + 100;
+    bubble.style.width = size + 'px';
+    bubble.style.height = size + 'px';
+    bubble.style.left = (e.clientX - size / 2) + 'px';
+    bubble.style.top = (e.clientY - size / 2) + 'px';
+    bubble.style.background = colors[Math.floor(Math.random() * colors.length)];
+    document.body.appendChild(bubble);
+
+    bubble.addEventListener('animationend', () => bubble.remove());
 });
